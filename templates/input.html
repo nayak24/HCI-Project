@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="">
+<head>
+  <title>Submit Arguments</title>
+</head>
+<body>
+  <h1>🗣️ Submit Your Arguments</h1>
+
+  <form action="{{ url_for('submit') }}" method="POST">
+    <textarea name="user_input_1" rows="4" cols="50" placeholder="Input argument 1..."></textarea><br><br>
+    <textarea name="user_input_2" rows="4" cols="50" placeholder="Input argument 2..."></textarea><br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <br>
+  <a href="{{ url_for('whiteboard') }}">Go to Whiteboard</a>
+</body>
+</html>

@@ -2,7 +2,7 @@ from google import genai
 import os
 import requests
 
-client = genai.Client(api_key="") # get from https://aistudio.google.com/apikey
+client = genai.Client(api_key="AIzaSyC6CrdjUfF9c_u2FdRmzVGV1AWwt2Y6RFk") # get from https://aistudio.google.com/apikey
 MIRO_BOARD_ID = "uXjVILQuL70"
 MIRO_ACCESS_TOKEN = ""
 
@@ -126,5 +126,5 @@ if __name__ == "__main__":
     for opinion, (x, y) in opinion_positions.items():
         result = create_miro_bubble(opinion, x, y, MIRO_BOARD_ID, MIRO_ACCESS_TOKEN)
         # print(f"Created bubble for opinion '{opinion}' at ({x}, {y}): {result}")
-    
+
     print("\nWhiteboard generation complete")
